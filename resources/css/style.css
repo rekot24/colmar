@@ -9,15 +9,38 @@ body {
   line-height: 1.6;
 }
 
-.image-container {
+.big-image {
   width: 60%;
   overflow: hidden;
+  padding: 2rem 1.5rem;
 }
 
-.image-container img {
+.big-image img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+.flex-center-vert {
+  display: flex;
+  align-items: center;
+}
+
+.main-text {
+  font-family: Helvetica;
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1.6;
+}
+
+.sub-text {
+  font-family: "Open Sans";
+  font-size: 1.5rem;
+}
+
+.p-text {
+  font-family: Raleway;
+  font-size: 1rem;
 }
 
 /* Header Styles */
@@ -25,13 +48,9 @@ body {
 header {
   height: 4rem;
   width: 100%;
-  display: flex;
-  align-items: center;
 }
 
 .desktop-header {
-  display: flex;
-  align-items: center;
   width: 100%;
   font-size: 1.5rem;
 }
@@ -52,8 +71,6 @@ header {
 }
 
 .menu {
-  display: flex;
-  align-items: center;
   padding-right: 1.5rem;
   font-family: "Roboto";
 }
@@ -68,3 +85,20 @@ header {
 }
 
 /* Banner Styles */
+
+#banner {
+  background-color: lightgrey;
+}
+
+#banner-right {
+  width: 30%;
+}
+
+.btn {
+  color: white;
+  background-color: darkgrey;
+  width: 100%;
+  text-align: center;
+  padding: .5rem 0;
+  margin-top: 2rem;
+}
