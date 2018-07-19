@@ -1,18 +1,3 @@
-/* Fonts */
-
-@font-face {
-  font-family: "Cantarell";
-  src: url(../fonts/Cantarell-Regular.tff) format('truetype')
-}
-@font-face {
-  font-family: "Roboto";
-  src: url(../fonts/Roboto-Regular.tff) format('truetype')
-}
-@font-face {
-  font-family: "OpenSans";
-  src: url(../fonts/OpenSans-Regular.tff) format('truetype')
-}
-
 /* Universal Styles */
 
 html {
@@ -22,6 +7,17 @@ html {
 
 body {
   line-height: 1.6;
+}
+
+.image-container {
+  width: 60%;
+  overflow: hidden;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* Header Styles */
@@ -37,29 +33,38 @@ header {
   display: flex;
   align-items: center;
   width: 100%;
+  font-size: 1.5rem;
 }
 
 .logo {
   padding-left: 2rem;
-  height: 2rem;
+  height: 3rem;
 }
 
-.title {
-  flex: 1;
-  font-family: "Roboto";
-  font-size: 1.5rem;
-  text-transform: uppercase;
-}
-
-.title strong {
+.name {
   font-weight: bold;
+  opacity: .9;
+}
+
+.name-fade {
+  flex: 1;
+  opacity: .5;
 }
 
 .menu {
   display: flex;
   align-items: center;
+  padding-right: 1.5rem;
+  font-family: "Roboto";
+}
+
+.menu li {
+  padding-left: 1rem;
+  font-family: "Pragati Narrow";
 }
 
 .mobile-header {
   display: none;
 }
+
+/* Banner Styles */
