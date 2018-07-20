@@ -12,7 +12,6 @@ body {
 .big-image {
   width: 60%;
   overflow: hidden;
-  padding: 2rem 1.5rem;
 }
 
 .big-image img {
@@ -94,6 +93,10 @@ header {
   width: 30%;
 }
 
+.banner-img {
+  padding: 2rem 1.5rem;
+}
+
 .btn {
   color: white;
   background-color: darkgrey;
@@ -101,4 +104,41 @@ header {
   text-align: center;
   padding: .5rem 0;
   margin-top: 2rem;
+}
+
+/* Information Body Section Styles */
+
+#info-body {
+  display: flex;
+  padding: 2rem 0 2rem 1.5rem;
+}
+
+#panels {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.body-img {
+  padding: 0 1.5rem 2rem 0;
+}
+
+.panel-img-box {
+  width: 35%;
+  overflow: hidden;
+}
+
+.panel-img-box img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#panels .top-panel {
+  padding-top: 0;
+}
+
+.panel-box {
+  display: flex;
+  padding: 1rem;
 }
