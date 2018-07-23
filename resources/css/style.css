@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 .big-image {
@@ -14,7 +14,12 @@ body {
   overflow: hidden;
 }
 
-.big-image img {
+.small-img {
+  width: 35%;
+  overflow: hidden;
+}
+
+.container img {
   max-width: 100%;
   height: auto;
   display: block;
@@ -25,21 +30,27 @@ body {
   align-items: center;
 }
 
-.main-text {
-  font-family: Helvetica;
-  font-size: 2.5rem;
+/* Font Styles */
+
+.head-text {
+  font-family: heebo;
   font-weight: 900;
-  line-height: 1.6;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  color: #4a4a4a;
+  letter-spacing: 1px;
+}
+
+.sub-head {
+  font-family: heebo;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #4a4a4a;
 }
 
 .sub-text {
   font-family: "Open Sans";
   font-size: 1.5rem;
-}
-
-.p-text {
-  font-family: Raleway;
-  font-size: 1rem;
 }
 
 /* Header Styles */
@@ -86,7 +97,7 @@ header {
 /* Banner Styles */
 
 #banner {
-  background-color: lightgrey;
+  background-color: #d8d8d8;
 }
 
 #banner-right {
@@ -99,7 +110,7 @@ header {
 
 .btn {
   color: white;
-  background-color: darkgrey;
+  background-color: #4a4a4a;
   width: 100%;
   text-align: center;
   padding: .5rem 0;
@@ -123,22 +134,140 @@ header {
   padding: 0 1.5rem 2rem 0;
 }
 
-.panel-img-box {
-  width: 35%;
-  overflow: hidden;
+.body-img h1 {
+  padding-top: 2rem;
 }
 
-.panel-img-box img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+.body-img p {
+  padding: 1.5rem 0;
 }
 
 #panels .top-panel {
   padding-top: 0;
 }
 
+.panel-text {
+  width: 65%;
+  padding-left: 1rem;
+}
+
+.panel-text h2 {
+  font-family: heebo;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+.panel-text h3 {
+  font-family: "Open Sans";
+  font-size: 1.5rem;
+}
+
 .panel-box {
   display: flex;
   padding: 1rem;
+}
+
+.bottom-panel {
+  background-color: #d8d8d8;
+}
+
+/* Course Styles */
+
+#course-list {
+  padding: 1rem 3.5rem;
+  background-color: #d8d8d8;
+}
+
+#course-list h1 {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.courses {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.course-box {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 1rem;
+  background-color: white;
+}
+
+.course-text-box {
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.course-text-box h2{
+  font-family: heebo;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+.course-text-box p {
+  font-family: "Open Sans";
+  font-size: 1.5rem;
+  color: #787878;
+  padding-top: 0.5rem;
+}
+
+/* Thesis Styles */
+
+#thesis {
+  padding: 2rem 1.5rem;
+}
+
+#thesis h1 {
+  font-family: heebo;
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  color: #4a4a4a;
+  letter-spacing: 1px;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.thesis-body {
+  display: flex;
+}
+
+#thesis-left-col {
+  width: 60%;
+  padding-right: 1.5rem;
+}
+
+#thesis-left-col video {
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 1.5rem;
+}
+
+#thesis-right-col {
+  width: 40%;
+}
+
+#thesis-right-col .top-panel {
+  background-color: #d8d8d8;
+}
+
+/* Footer styles */
+
+footer {
+  display: flex;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #4a4a4a;
+}
+
+footer h4 {
+  flex: 1;
+}
+
+footer li {
+  padding-left: 1rem;
 }
