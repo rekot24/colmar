@@ -206,7 +206,7 @@ header {
 
 .panel-text a {
   color: #4a90e2;
-  transition: all .5s linear;
+  transition: all .5s ease;
 }
 
 .panel-box {
@@ -219,13 +219,15 @@ header {
   background-color: #d8d8d8;
 }
 
-.panel-text a:hover {
-  color: #1e5485
+.panel-text a:visited {
+  color: #4a4a4a;
 }
 
-.panel-text a:visited {
-  color: #4a4a4a
+.panel-text a:hover {
+  color: #1e5485;
+  font-weight: bold;
 }
+
 
 /* Course Styles */
 
@@ -308,6 +310,18 @@ header {
   padding-bottom: 1.5rem;
 }
 
+#thesis-left-col h2 {
+  font-family: heebo;
+  font-weight: 900;
+  font-size: 2.5rem;
+  color: #4a4a4a;
+}
+
+#thesis-left-col p {
+  font-family: "Open Sans";
+  padding-top: 0.5rem;
+}
+
 #thesis-right-col {
   width: 40%;
 }
@@ -321,7 +335,7 @@ header {
 footer {
   display: flex;
   padding: 1rem 1.5rem;
-  border-top: 1px solid #4a4a4a;
+  border-top: thin solid #d8d8d8;
 }
 
 footer h4 {
