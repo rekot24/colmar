@@ -2,7 +2,7 @@
 
 html {
   font-size: 16px;
-  font-family: Cantarell, Roboto, OpenSans, "Sans-Serif";
+  font-family: Heebo, "Open Sans", "Pragati Narrow", Cantarell, "Sans-Serif";
 }
 
 body {
@@ -57,7 +57,6 @@ body {
 
 header {
   height: 4rem;
-  width: 100%;
 }
 
 .desktop-header {
@@ -72,17 +71,17 @@ header {
 
 .name {
   font-weight: bold;
-  opacity: .9;
+  color: #4a4a4a;
 }
 
-.name-fade {
+.fade {
   flex: 1;
-  opacity: .5;
+  font-weight: 400;
+  color: #9b9b9b;
 }
 
 .menu {
   padding-right: 1.5rem;
-  font-family: "Roboto";
 }
 
 .menu li {
@@ -104,55 +103,97 @@ header {
   width: 30%;
 }
 
+#banner-right h1 {
+  font-family: heebo;
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  color: #4a4a4a;
+  letter-spacing: 1px;
+}
+
+#banner-right h3 {
+  font-family: heebo;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #4a4a4a;
+  padding: 1.5rem 0;
+}
+
 .banner-img {
   padding: 2rem 1.5rem;
 }
 
-.btn {
+.btn a {
+  display: inline-block;
   color: white;
   background-color: #4a4a4a;
+  font-family: "Open Sans";
   width: 100%;
   text-align: center;
   padding: .5rem 0;
-  margin-top: 2rem;
+  transition: all .5s linear;
+  text-decoration: none;
+}
+
+.btn a:visited {
+  color: #d8d8d8;
+}
+
+.btn a:hover {
+  background: #1e5485;
+}
+
+.btn a:active {
+  background: #56a6ee;
 }
 
 /* Information Body Section Styles */
 
 #info-body {
   display: flex;
-  padding: 2rem 0 2rem 1.5rem;
 }
 
 #panels {
   display: flex;
   flex-direction: column;
   width: 40%;
+  border-left: thin #d8d8d8 solid;
+  padding-top: 1rem;
 }
 
 .body-img {
-  padding: 0 1.5rem 2rem 0;
+  padding: 2rem 1.5rem;
 }
 
 .body-img h1 {
+  font-family: heebo;
+  font-weight: 900;
+  font-size: 2.5rem;
+  color: #4a4a4a;
   padding-top: 2rem;
 }
 
 .body-img p {
+  font-family: "Open Sans";
+  font-size: 1.2rem;
   padding: 1.5rem 0;
 }
 
-#panels .top-panel {
-  padding-top: 0;
+.body-img h4 {
+  font-family: Cantarell;
 }
 
 .panel-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   width: 65%;
   padding-left: 1rem;
 }
 
 .panel-text h2 {
-  font-family: heebo;
+  font-family: "Open Sans";
   font-size: 2rem;
   font-weight: 700;
   color: #4a4a4a;
@@ -163,13 +204,27 @@ header {
   font-size: 1.5rem;
 }
 
+.panel-text a {
+  color: #4a90e2;
+  transition: all .5s linear;
+}
+
 .panel-box {
   display: flex;
+  border-bottom: thin #d8d8d8 solid;
   padding: 1rem;
 }
 
 .bottom-panel {
   background-color: #d8d8d8;
+}
+
+.panel-text a:hover {
+  color: #1e5485
+}
+
+.panel-text a:visited {
+  color: #4a4a4a
 }
 
 /* Course Styles */
@@ -196,6 +251,11 @@ header {
   width: 30%;
   margin: 1rem;
   background-color: white;
+}
+
+.course-img-box {
+  width: 100%
+  overflow: hidden;
 }
 
 .course-text-box {
