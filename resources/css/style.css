@@ -20,7 +20,7 @@ body {
 }
 
 .container img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
 }
@@ -28,29 +28,6 @@ body {
 .flex-center-vert {
   display: flex;
   align-items: center;
-}
-
-/* Font Styles */
-
-.head-text {
-  font-family: heebo;
-  font-weight: 900;
-  font-size: 2.5rem;
-  line-height: 1.2;
-  color: #4a4a4a;
-  letter-spacing: 1px;
-}
-
-.sub-head {
-  font-family: heebo;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #4a4a4a;
-}
-
-.sub-text {
-  font-family: "Open Sans";
-  font-size: 1.5rem;
 }
 
 /* Header Styles */
@@ -91,6 +68,18 @@ header {
 
 .mobile-header {
   display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  .desktop-header {
+    display: none;
+  }
+
+  .mobile-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 /* Banner Styles */
@@ -234,6 +223,11 @@ header {
 #course-list {
   padding: 1rem 3.5rem;
   background-color: #d8d8d8;
+  font-family: heebo;
+  font-weight: 900;
+  font-size: 2.5rem;
+  color: #4a4a4a;
+  letter-spacing: 1px;
 }
 
 #course-list h1 {
@@ -256,7 +250,7 @@ header {
 }
 
 .course-img-box {
-  width: 100%
+  width: 100%;
   overflow: hidden;
 }
 
